@@ -1,0 +1,51 @@
+@import url(./variables.css);
+
+
+:root {
+    --header-bg-color: var(--white);
+    --header-color: var(--very-dark-blue-light);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    display: flex;
+    gap: 0.8rem;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--header-color);
+    background-color: var(--header-bg-color);
+    z-index: 10000;
+    overflow: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.359);
+}
+
+header h1 {
+    font-size: 1.2rem;
+}
+
+.theme-icon {
+    font-size: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+@media screen and (min-width:720px) {
+    .theme-icon {
+        font-size: 0.8rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* 
+ <header>
+ <h1>Where in the world?</h1>
+ <div class="theme-icon">
+ <i class="fas fa-moon"></i><span>Dark Mode</span></div></header> */
